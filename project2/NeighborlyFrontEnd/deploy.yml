@@ -1,0 +1,8 @@
+data:
+  FUNCTIONS_WORKER_RUNTIME: cHl0aG9u
+apiVersion: v1
+kind: Secret
+metadata:
+  name: myapplcuster
+---
+
