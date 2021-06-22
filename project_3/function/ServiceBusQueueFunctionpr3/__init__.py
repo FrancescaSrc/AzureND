@@ -11,14 +11,14 @@ def main(msg: func.ServiceBusMessage):
   
     notification_id = int(msg.get_body().decode('utf-8'))
     logging.info('Python ServiceBus queue trigger processed message: %s',notification_id)
-    print('Print processed message id: {}'.format(notification_id))
+    
     # Get connection to database
     try:
         conn = psycopg2.connect(host="p3-dbserver.postgres.database.azure.com",
                                     dbname="techconfdb",
                                     user="pgadmin@p3-dbserver",
                                     password="7June2021")
-        logging.info('Connction to Databse established...{}'.format(conn))                              
+       # logging.info('Connction to Databse established...{}'.format(conn))                              
         cursor = conn.cursor()
         logging.info('Connction to Databse established...')
     except (Exception, psycopg2.DatabaseError) as error:
