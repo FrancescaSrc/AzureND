@@ -73,7 +73,7 @@ Complete a month cost analysis of each Azure resource to give an estimate total 
 
 
 ## Architecture Explanation
-The architecture is composed by an app with a front and a back end and a postgras database for the persistance. A service bus and a queue storage have been deployed separtly to queue the notification messages. A service bus trigger function has been implemented on app service. When a message is added to the queue, the function gets executed, sends of emails to the attendees and updates the status in the database.
-Advantages of this architecture:
-The consuption plan for the function lowers the costs and the service bus queue make it more easy to scale up and out according to traffic and number of notifications queued.
-This delivers a scalable, cheap and performing web app which is easier to maintain.
+The architecture is composed by an app with a frontend and a backend and a Postgres database for persistance. A service bus and a queue storage have been deployed separtly to queue up the notification messages and handle them by a separate function. A service bus trigger function has been implemented on app service. When a message is added to the queue, the function gets executed, sends of emails to the attendees and updates the status in the database.
+### Advantages of this architecture:
+The consuption plan for the function lowers the costs and the service bus queue make it easy to scale up and out according to traffic and number of notifications queued.
+This delivers a scalable, cheap and performing web app with microservices which are easier to maintain.
