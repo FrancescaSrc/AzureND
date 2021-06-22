@@ -38,7 +38,7 @@ def main(msg: func.ServiceBusMessage):
         logging.info('Sending emails...')
         for att in attendees:
            # Mail('{}, {}, {}'.format({'admin@techconf.com'}, {att[1]}, {notification}))
-           # could not get a Sendgrid API so I used a different method
+           # could not get a Sendgrid API so I used a different method, this code is taken from the mailer framework examples
             message = Message(From="info@solvedo.com", To=str(att[1]), charset="utf-8")
             message.Subject = "Confirmation notification"
             message.Body = str(notification)
