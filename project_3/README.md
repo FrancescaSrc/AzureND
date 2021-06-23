@@ -66,7 +66,7 @@ Complete a month cost analysis of each Azure resource to give an estimate total 
 | *Azure Postgres Database* |  Single Server Basic Tier, 2v Cores, 5 GB, General pupose storage, Backup 7 days   |  121.36 EUR month          |
 | *Azure Service Bus*     |    Basic     |     0.01  EUR         |
 | *Azure Storage account* |   2 accounts  10k transactions  StorageV2 (general purpose v2)   |  0.01 EUR              |
-| *App Service*                   | 1 instance        | 0              |
+| *App Service*                   | 1 instance (free plan)       | 0              |
 | *Azure Functions*                   |   Consumption Plan (free tier)      |          0     |
 | *Resource Manager*                   | 1M resouce management operations        |        2 EUR      |
 | *total*                   | Free and basic tier        |        123.38 EUR  MONTH    |
