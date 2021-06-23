@@ -66,14 +66,14 @@ Complete a month cost analysis of each Azure resource to give an estimate total 
 | *Azure Postgres Database* |  Single Server Basic Tier, 2v Cores, 5 GB, General pupose storage, Backup 7 days   |  121.36 EUR month          |
 | *Azure Service Bus*     |    Basic     |     0.01  EUR         |
 | *Azure Storage account* |   2 accounts  10k transactions  StorageV2 (general purpose v2)   |  0.01 EUR              |
-| *App Service*                   | 1 instance        | $ 15 month              |
+| *App Service*                   | 1 instance        | 0              |
 | *Azure Functions*                   |   Consumption Plan (free tier)      |          0     |
 | *Resource Manager*                   | 1M resouce management operations        |        2 EUR      |
 | *total*                   | Free and basic tier        |        123.38 EUR  MONTH    |
 
 
 ## Architecture Explanation
-The architecture is composed by an app with a frontend and a backend and a Postgres database for persistance. A service bus and a queue storage have been deployed separtly to queue up the notification messages and handle them by a separate function. A service bus trigger function has been implemented on app service. When a message is added to the queue, the function gets executed, sends of emails to the attendees and updates the status in the database.
+The architecture is composed by an app with a frontend and a backend and a Postgres database for persistance. A service bus and a queue storage have been deployed separately to queue up the notification messages and handle them by a separate app function. A service bus trigger function has been implemented on app service. When a message is added to the queue, the function gets executed, sends of emails to the attendees and updates the status in the database.
 ### Advantages of this architecture:
-The consuption plan for the function lowers the costs and the service bus queue make it easy to scale up and out according to traffic and number of notifications queued.
+The consumption plan for the function lowers the costs and the service bus queue make it easy to scale up and out according to traffic and number of notifications queued.
 This delivers a scalable, cheap and performing web app with microservices which are easier to maintain.
