@@ -11,10 +11,10 @@ Based on a minimal cost calculation.
 | *total*                   | Free and basic tier        |        142.11 EUR  MONTH    |
 
 The VM solution would offer:
-High scalability: in case of increase in the number of users, the VMs can be grouped together
-Availability: dedicated servers both for compute power and security reasons
-Workflow: Support of Linux and Window VMs with custom images, more control on the development stack, more languages supported
-Costs: more compute power will mean higher costs
+- High scalability: in case of increase in the number of users, the VMs can be grouped together
+- Availability: dedicated servers both for compute power and security reasons
+- Workflow: Support of Linux and Window VMs with custom images, more control on the development stack, more languages supported
+- Costs: more compute power will mean higher costs
 
 
 # App Service Solution Costs
@@ -31,10 +31,10 @@ Based on a minimal cost calculation.
 
 
 The App Service solution would offer:
-Scalability: Vertical scaling limited to max of 4 CPUs and 14 GB of RAM, horizontal scaling with more machines
-Availability: High availability, auto-scaling and support of both Linux and Windows environment
-Workflow: Continuous deployment model with GitHub, Azure DevOps and use of major development languages
-Costs: granular on the base of the chosen plan
+- Scalability: Vertical scaling limited to max of 4 CPUs and 14 GB of RAM, horizontal scaling with more machines
+- Availability: High availability, auto-scaling and support of both Linux and Windows environment
+- Workflow: Continuous deployment model with GitHub, Azure DevOps and use of major development languages
+- Costs: granular on the base of the chosen plan
 
 # Solution choice: App Service
 
