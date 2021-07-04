@@ -38,19 +38,16 @@ The App Service solution would offer:
 
 # Solution choice: App Service
 
-In the choice of the type of solution, some key points are to be considered:
+In choosing the type of solution, some key points have been considered:
 
-- Deploying a simple webapp with potential growth
+- We are deploying a simple webapp with potential growth
 - Scaling up of processing power might be a concern for later
 - Cost-consciousness over speed and scalability
 - Good response 
-- Deployment with Python and Github, no other special needs
+- Quick deployment cycle with Python and Github, no other special needs
 
 
-I would choose an App Service in this situation. Lightweight APIs tend to be well-suited to App Services over VMs, and won't approach the size limit for App Services very easily. Additionally, App Services cost less than VMs do. Lastly, since the ability to scale quickly is less of a concern, we don't need to factor that into the analysis.
-
-
-I have chosen an App Service for the current deployment. The App Service is much cheaper and more flexible for lightweight webapps such as the one I implemented. The webapp will not approach the size limit for App Services very quickly as it runs on 1 vCPU with 5GB of RAM. By the time it will need more than 4 vCPUs and a max of 14GB of RAM, the app will be probably be very different with other functionalities in place and more users. This makes App Services a beter choice for now. Additionally, App Services cost less than VMs do. Lastly, since the ability to scale quickly is less of a concern in this development fase, we don't need to consider that in the analysis of the current situation.
+I have chosen an App Service for the current deployment. The App Service is much cheaper and more flexible for lightweight webapps such as the one I implemented. The webapp will not approach the size limit for App Services very quickly as it runs on 1 vCPU with 5GB of RAM. By the time it will need more than 4 vCPUs and a max of 14GB of RAM, the app will be probably be very different with new and more complex functionalities in place and a lot more users. This makes App Services a beter choice for now. Additionally, App Services cost less than VMs do. Lastly, since the ability to scale quickly is less of a concern in this development phase, we don't need to consider that in the analysis of the current situation.
 
 
 ### App changes that would change my choice to VMs
