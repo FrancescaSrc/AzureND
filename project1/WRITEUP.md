@@ -1,24 +1,13 @@
 # Analysis of costs, resources and solution choice
 
-### Analyze, choose, and justify the appropriate resource option for deploying the app.
-
-*For **both** a VM or App Service solution for the CMS app:*
-- *Analyze costs, scalability, availability, and workflow*
-- *Choose the appropriate solution (VM or App Service) for deploying the app*
-- *Justify your choice*
-
-
-
-
-
 # VM Solution Costs
+Based on a minimal cost calculation.
 | Azure Resource | Service Tier | Monthly Cost |
 | ------------ | ------------ | ------------ |
 | *SQL Database licensing* |   1v Core, 1GB memory, 5 GB database   |      free     |
-| *Azure VM*   |     B1ls General pupose 2 vCPU, 8GB RAM, 4 Data disks    |     59.10 EUR / month         |
- *Blob Container*                   |   D1 v2: 1 vCPU, 2.5 GB RAM, 50 GB sorage      |          83 EUR/month     |
+| *Azure VM*   |     B1ls General purpose 2 vCPU, 8GB RAM, 4 Data disks    |     59.10 EUR / month         |
+ *Blob Container*                   |   D1 v2: 1 vCPU, 2.5 GB RAM, 50 GB storage      |          83 EUR/month     |
 | *Azure Storage account* |   1 account  10k transactions  StorageV1 (general purpose v1)   |  0.01 EUR              |
-
 | *total*                   | Free and basic tier        |        142.11 EUR  MONTH    |
 
 The VM solution would offer:
@@ -29,15 +18,15 @@ Costs: more compute power will mean higher costs
 
 
 # App Service Solution Costs
+Based on a minimal cost calculation.
 
 | Azure Resource | Service Tier | Monthly Cost |
 | ------------ | ------------ | ------------ |
-| *SQL Database* |   1v Core, 5 GB Storage, Baisc, Backup 7 days   |      21.70 EUR / month        |
+| *SQL Database* |   1v Core, 5 GB Storage, Basic, Backup 7 days   |      21.70 EUR / month        |
 | *Azure SQL Server*     |    Basic     |     4.95  EUR / month        |
  *Azure App Service Plan*   | F1: Free        |        0      |
 | *App Service*                   | 1 instance (free plan)       | 0             |
 | *Blob Database*                   |  General Purpose      |         19 EUR/month     |
-
 | *total*                   | Free and basic tier        |        45.65 EUR  MONTH    |
 
 
@@ -52,9 +41,8 @@ Costs: granular on the base of the chosen plan
 In the choice of the type of solution, some key points are to be considered:
 
 - Deploying a simple webapp with potential growth
-- Deploying a simple webapp with potential growth
 - Scaling up of processing power might be a concern for later
-- Cost-consciousness over speed and scalabilty
+- Cost-consciousness over speed and scalability
 - Good response 
 - Deployment with Python and Github, no other special needs
 
@@ -69,4 +57,4 @@ I have chosen an App Service for the current deployment. The App Service is much
 
 *Detail how the app and any other needs would have to change for you to change your decision in the last section.* 
 
-If and when the webapps reaches a more mature fase as a real product and will need more compute power, VMs would be an option to consider for migration from the current App Service. In this case the costs would be higher but less important since the App reached a maximum of resources allocated for the App Service and has been therefore sucessfull. To maintain its success and continue its growth, a new development stack will probably be needed with more concern for security of the user data and for testing. The VMs will offer more control on the development and the technlogy stack and might lead to different software solution in terms of operating system and development languages used. In such a scenario, a set of VMs rather than a lightweight App Service would be a more suitable choice. 
+If and when the webapps reaches a more mature phase as a real product and will need more compute power, VMs would be an option to consider for migration from the current App Service. In this case the costs would be higher but less important since the App reached a maximum of resources allocated for the App Service and has been therefore successfull. To maintain its success and continue its growth, a new development stack will probably be needed with more concern for security of the user data and for testing. The VMs will offer more control on the development and the technology stack and might lead to different software solution in terms of operating system and development languages used. In such a scenario, a set of VMs rather than a lightweight App Service would be a more suitable choice. 
