@@ -5,10 +5,10 @@ Based on a minimal cost calculation.
 | Azure Resource | Service Tier | Monthly Cost |
 | ------------ | ------------ | ------------ |
 | *SQL Database licensing* |   1v Core, 1GB memory, 5 GB database   |      free     |
-| *Azure VM*   |     B1ls General purpose 2 vCPU, 8GB RAM, 4 Data disks    |     59.10 EUR / month         |
- *Blob Container*                   |   D1 v2: 1 vCPU, 2.5 GB RAM, 50 GB storage      |          83 EUR/month     |
+| *Azure VM*   |     B1ls General purpose 2 vCPU, 8GB RAM, 4 Data disks    |     59.10 EUR           |
+ *Blob Container*                   |   D1 v2: 1 vCPU, 2.5 GB RAM, 50 GB storage      |          83 EUR     |
 | *Azure Storage account* |   1 account  10k transactions  StorageV1 (general purpose v1)   |  0.01 EUR              |
-| *total*                   | Free and basic tier        |        142.11 EUR  MONTH    |
+| *total*                   | Free and basic tier        |        142.11 EUR     |
 
 The VM solution would offer:
 - High scalability: in case of increase in the number of users, the VMs can be grouped together
@@ -22,12 +22,12 @@ Based on a minimal cost calculation.
 
 | Azure Resource | Service Tier | Monthly Cost |
 | ------------ | ------------ | ------------ |
-| *SQL Database* |   1v Core, 5 GB Storage, Basic, Backup 7 days   |      21.70 EUR / month        |
-| *Azure SQL Server*     |    Basic     |     4.95  EUR / month        |
+| *SQL Database* |   1v Core, 5 GB Storage, Basic, Backup 7 days   |      21.70 EUR         |
+| *Azure SQL Server*     |    Basic     |     4.95  EUR         |
  *Azure App Service Plan*   | F1: Free        |        0      |
 | *App Service*                   | 1 instance (free plan)       | 0             |
-| *Blob Database*                   |  General Purpose      |         19 EUR/month     |
-| *total*                   | Free and basic tier        |        45.65 EUR  MONTH    |
+| *Blob Database*                   |  General Purpose      |         19 EUR     |
+| *total*                   | Free and basic tier        |        45.65 EUR      |
 
 
 The App Service solution would offer:
